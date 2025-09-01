@@ -17,13 +17,14 @@ function LandingPage() {
 <p className='text-dark'>Whether you’re a beginner or long-term practitioner, whether you just want to move your body or learn how it moves, you're welcome just as you are.</p>
 <div >
 {/* Image Slider for Classes 🎞 */}
-<Parallax pages={2}>
-<ParallaxLayer offset={1}   speed={2}>   <img src="https://ik.imagekit.io/ye/tr:w-1170/production/uploads/components/homepage/programs-section/21-mornings-with-Yoga.jpg" alt="" /></ParallaxLayer>
-<ParallaxLayer offset={0.5}   speed={1}> <img src="https://ik.imagekit.io/ye/tr:w-1170/production/uploads/components/homepage/programs-section/3-week-Yoga-workout.jpg" alt="" /></ParallaxLayer>
-<ParallaxLayer offset={0.1} speed={0.5}>   <img src="https://ik.imagekit.io/ye/tr:w-1170/production/uploads/components/homepage/programs-section/Yoga-for-beginners.jpg" alt="" /></ParallaxLayer>
-<ParallaxLayer offset={0.5} speed={0}> <img src="https://ik.imagekit.io/ye/tr:w-1170/production/uploads/components/homepage/programs-section/Just-Yin-Yoga.jpg" alt="" /></ParallaxLayer>
+<Parallax pages={2}  style={{height:"400px",marginBottom:"0px"}}>
+<ParallaxLayer offset={1} factor={1} speed={0}> <img src="https://ik.imagekit.io/ye/tr:w-1170/production/uploads/components/homepage/programs-section/3-week-Yoga-workout.jpg" alt="" /></ParallaxLayer>
+{/* <ParallaxLayer  offset={0} factor={0} speed={0} >   <img src="https://ik.imagekit.io/ye/tr:w-1170/production/uploads/components/homepage/programs-section/21-mornings-with-Yoga.jpg" alt="" /></ParallaxLayer> */}
+<ParallaxLayer offset={0.25} factor={0.5}  speed={0.5}> <img src="https://ik.imagekit.io/ye/tr:w-1170/production/uploads/components/homepage/programs-section/Just-Yin-Yoga.jpg" alt="" /></ParallaxLayer>
+
+{/* <ParallaxLayer offset={2}   factor={3} speed={1}>   <img src="https://ik.imagekit.io/ye/tr:w-1170/production/uploads/components/homepage/programs-section/Yoga-for-beginners.jpg" alt="" /></ParallaxLayer> */}
+
 </Parallax>
-      
 </div>
   </section>
 <section>
