@@ -1,9 +1,17 @@
+import { Slider } from '@mui/material'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import React from 'react'
 
 
 
 function LandingPage() {
+  const settings={
+    dots: true,
+    infinite:true,
+    speed:500,
+    sliderToShadow:3,
+    slideToScroll:1
+  }
   return (
     <>
   <section >
@@ -29,7 +37,22 @@ function LandingPage() {
   </section>
 <section>
   {/* Instructor Cards 👩‍🏫 */}
-</section>
+  {/* image foryoga class */}
+{/* <div className="w-3/4 m-auto">
+<div className="mt-20">
+  <Slider {...settings}>
+{
+  data.map((d)=>(
+    <div className='bg-white h-[450px] text-black rounded-xl'>
+    <img src="" alt="" />
+    </div>
+  ))
+} */}
+  {/* </Slider>
+  </div>
+  </div> */}
+
+</section> 
 
   <section className='row container-fluid'>
     <img className='col-6' src="https://ik.imagekit.io/ye/tr:w-676/production/uploads/components/mobile-app-section/app-banner-desktop-EN.jpg" alt="" />
