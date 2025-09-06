@@ -4,6 +4,8 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
+import SampleNextArrow from '../components/SampleNextArrow';
+import SamplePrevArrow from '../components/SamplePrevArrow';
 
 function LandingPage() {
    const dataS = [
@@ -47,7 +49,9 @@ function LandingPage() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
-     arrows: true 
+     arrows: true ,
+      nextArrow: <SampleNextArrow />,
+  prevArrow: <SamplePrevArrow />
   };
 
   
@@ -59,8 +63,25 @@ function LandingPage() {
        <p style={{width:"400px"    ,marginLeft:"100px",fontWeight:"400"}}>We believe in the power of yoga to heal, empower, and connect. Wherever you are on your journey, come as you are and let’s take it together.</p>
     </div>
   </section>
-  <section className=' my-5 text-center ' style={{color:'rgb(4, 95, 102)',height:"100vh"}}>
-<h1 style={{fontWeight:"700"}}> Classes for every level and need</h1>
+<section  className='mt-5  text-center ' style={{color:'rgb(4, 95, 102)',height:"100vh"}}>
+  <h1 style={{fontWeight:"700"}}>Move, Breathe, and Recharge</h1>
+<p className='text-dark'> Discover practices that awaken your energy in the morning, reset your focus during the day, and bring you peace at night.</p>
+
+<div className="slider-container container mb-5">
+      <Slider {...settings}>
+  {dataS.map((d, i) => (
+    <div key={i} className="d-flex justify-content-center">
+      <img src={d.img} alt='images' style={{ width: "300px", height: "400px" }} className='rounded-5'/>
+    </div>
+  ))}
+</Slider>
+    </div>
+
+
+</section> 
+
+  <section className=' text-center ' style={{color:'rgb(4, 95, 102)',height:"100vh"}}>
+<h1 style={{fontWeight:"700"}}>  Classes for every level and need </h1>
 <p className='text-dark'>Whether you’re a beginner or long-term practitioner, whether you just want to move your body or learn how it moves, you're welcome just as you are.</p>
 <div >
 {/* Image Slider for Classes 🎞 */}
@@ -75,21 +96,9 @@ function LandingPage() {
 </div>
   </section>
 
-<section >
-<div className="slider-container container mb-5">
-      <Slider {...settings}>
-  {dataS.map((d, i) => (
-    <div key={i} className="d-flex justify-content-center">
-      <img src={d.img} alt='images' style={{ width: "300px", height: "400px" }} className='rounded-5'/>
-    </div>
-  ))}
-</Slider>
-    </div>
 
 
-</section> 
-
-  <section className='row container-fluid mt-5 ' >
+  <section className='row container-fluid ' >
     <img className='col-6' src="https://ik.imagekit.io/ye/tr:w-676/production/uploads/components/mobile-app-section/app-banner-desktop-EN.jpg" alt="" />
 
 <div className='container  col-6 py-5 text-align-center' style={{backgroundColor:"rgb(226, 242, 252)"}}>    
