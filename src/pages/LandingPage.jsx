@@ -98,6 +98,81 @@ function LandingPage() {
 
 
 
+<section 
+  className="text-center"  
+  style={{ color: 'rgb(4, 95, 102)', height: "100vh" }}
+>
+  <h1 className="mb-5">Meet Our Teachers</h1>
+
+  <Parallax pages={3} style={{ height: "300px" }}>
+    
+    <ParallaxLayer offset={0} speed={0.3}>
+      <div className="d-flex justify-content-center gap-5">
+        <img 
+          src="https://img.freepik.com/free-photo/close-up-confident-corporate-woman-professional-entrepreneur-smiling-cross-arms-chest-smiling-enthusiastic-standing-white-background_1258-85600.jpg" 
+          alt="Teacher 1" 
+          className="teacher-img"
+        />
+        <img 
+          src="https://img.freepik.com/free-photo/smiling-brunette-woman-with-crossed-arms-looking-camera-gray_171337-987.jpg?semt=ais_hybrid&w=740&q=80" 
+          alt="Teacher 2" 
+          className="teacher-img"
+        />
+        <img 
+          src="https://media.istockphoto.com/id/661799106/photo/portrait-of-a-young-french-man.jpg?s=612x612&w=0&k=20&c=M-8ccbYQZCvQWmKLLyDF5mYjF3KaBTQwX6HDdzvw_pk=" 
+          alt="Teacher 3" 
+          className="teacher-img"
+        />
+      </div>
+    </ParallaxLayer>
+
+ 
+    <ParallaxLayer offset={1} speed={0.4}>
+      <div className="d-flex justify-content-center gap-5">
+        <img 
+          src="https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg?semt=ais_incoming&w=740&q=80" 
+          alt="Teacher 4" 
+          className="teacher-img"
+        />
+        <img 
+          src="https://media.istockphoto.com/id/1272208623/photo/look-at-ads-here-portrait-of-handsome-happy-man-in-stylish-denim-shirt-pointing-aside-showing.jpg?s=612x612&w=0&k=20&c=tl3TgfcmKdk3aRsxPLsqVMptq0piNH6hNHY__Y1Qe4U=" 
+          alt="Teacher 5" 
+          className="teacher-img"
+        />
+        <img 
+          src="https://media.istockphoto.com/id/1289220545/photo/beautiful-woman-smiling-with-crossed-arms.jpg?s=612x612&w=0&k=20&c=qmOTkGstKj1qN0zPVWj-n28oRA6_BHQN8uVLIXg0TF8=" 
+          alt="Teacher 6" 
+          className="teacher-img"
+        />
+      </div>
+    </ParallaxLayer>
+
+   
+    <ParallaxLayer offset={2} speed={0.5}>
+      <div className="d-flex justify-content-center gap-5">
+        <img 
+          src="https://www.shutterstock.com/image-photo/young-brazilian-man-isolated-on-260nw-2242569333.jpg" 
+          alt="Teacher 7" 
+          className="teacher-img"
+        />
+        <img 
+          src="https://thumbs.dreamstime.com/b/portrait-handsome-smiling-young-man-folded-arms-smiling-joyful-cheerful-men-crossed-hands-isolated-studio-shot-172869765.jpg" 
+          alt="Teacher 8" 
+          className="teacher-img"
+        />
+        <img 
+          src="https://img.freepik.com/free-photo/confident-african-businesswoman-smiling-closeup-portrait-jobs-career-campaign_53876-143280.jpg" 
+          alt="Teacher 9" 
+          className="teacher-img"
+        />
+      </div>
+    </ParallaxLayer>
+
+  </Parallax>
+</section>
+
+
+
   <section className='row container-fluid ' >
     <img className='col-6' src="https://ik.imagekit.io/ye/tr:w-676/production/uploads/components/mobile-app-section/app-banner-desktop-EN.jpg" alt="" />
 
