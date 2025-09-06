@@ -1,17 +1,56 @@
-import { Slider } from '@mui/material'
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import React from 'react'
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick';
 
 function LandingPage() {
-  const settings={
-    dots: true,
-    infinite:true,
-    speed:500,
-    sliderToShadow:3,
-    slideToScroll:1
+   const dataS = [
+  {
+    img:"https://i.pinimg.com/1200x/2f/82/2e/2f822eb1965ee61d8318dd8d0e6311bb.jpg"
+  },
+  {
+    img:"https://i.pinimg.com/736x/63/6f/2a/636f2aa74746f9603d906e70dd9f03a5.jpg"
+  },
+  {
+    img:"https://i.pinimg.com/736x/aa/56/3a/aa563afa6c34ec3c2e0182a53fc3248f.jpg"
   }
+  ,
+  {
+    img:"https://i.pinimg.com/736x/6f/9d/b4/6f9db4dd2be2fa3de32b2b370d8591ed.jpg"
+  },
+
+
+
+  {
+    img:"https://i.pinimg.com/736x/42/17/51/421751e8debff4b83928415e13476bad.jpg"
+  },
+  {
+    img:"https://i.pinimg.com/736x/57/f0/15/57f0155412b8b9e8bdd580338c8919d5.jpg"
+  },
+  {
+    img:"https://i.pinimg.com/736x/7f/d8/61/7fd86174f6b02b30b27560a212957249.jpg"
+  }
+  ,
+  {
+    img:"https://i.pinimg.com/736x/57/27/f8/5727f85218a6cc4a91dd2ac44b53d765.jpg"
+  },
+  {
+    img:"https://i.pinimg.com/736x/2e/d6/6b/2ed66b0c84f3a01f62ba347b2824b4bf.jpg"
+  }
+ ]
+
+    const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+     arrows: true 
+  };
+
+  
   return (
     <>
   <section >
@@ -35,26 +74,22 @@ function LandingPage() {
 </Parallax>
 </div>
   </section>
-<section>
-  {/* Instructor Cards 👩‍🏫 */}
-  {/* image foryoga class */}
-{/* <div className="w-3/4 m-auto">
-<div className="mt-20">
-  <Slider {...settings}>
-{
-  data.map((d)=>(
-    <div className='bg-white h-[450px] text-black rounded-xl'>
-    <img src="" alt="" />
+
+<section >
+<div className="slider-container container mb-5">
+      <Slider {...settings}>
+  {dataS.map((d, i) => (
+    <div key={i} className="d-flex justify-content-center">
+      <img src={d.img} alt='images' style={{ width: "300px", height: "400px" }} className='rounded-5'/>
     </div>
-  ))
-} */}
-  {/* </Slider>
-  </div>
-  </div> */}
+  ))}
+</Slider>
+    </div>
+
 
 </section> 
 
-  <section className='row container-fluid'>
+  <section className='row container-fluid mt-5 ' >
     <img className='col-6' src="https://ik.imagekit.io/ye/tr:w-676/production/uploads/components/mobile-app-section/app-banner-desktop-EN.jpg" alt="" />
 
 <div className='container  col-6 py-5 text-align-center' style={{backgroundColor:"rgb(226, 242, 252)"}}>    

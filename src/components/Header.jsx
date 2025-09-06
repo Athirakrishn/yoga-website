@@ -10,7 +10,7 @@ function Header() {
   return (
     <>
      <Box sx={{ flexGrow: 1 }} >
-      <AppBar position="static" sx={{backgroundColor:" rgb(255, 255, 255)"}}>
+      <AppBar position="static" sx={{backgroundColor:'rgb(4, 95, 102)'}}>
         <Toolbar>
           <IconButton
             size="large"
@@ -21,11 +21,11 @@ function Header() {
           >
           {/* meuicon */}
           </IconButton>
-          <Typography variant="h5" component="div" sx={{ flexGrow: 1,color:"rgb(0, 0, 0)",fontWeight:"700" }}>
+          <Typography variant="h5" component="div" sx={{ flexGrow: 1,color:"rgb(255, 255, 255)",fontWeight:"700" }}>
             YOGA-STUDIO
              </Typography>
              
-          <Box sx={{ flexGrow: 1 , display: "flex", justifyContent: "space-evenly",gap:"3",color:"rgb(0, 0, 0)" }}>
+          <Box sx={{ flexGrow: 1 , display: "flex", justifyContent: "space-evenly",gap:"3",color:"rgb(255, 255, 255)" }}>
             <Typography variant="h6" component="div" >Classes</Typography> 
             <Typography variant="h6" component="div">Programs</Typography> 
             <Typography variant="h6" component="div" >Live classes</Typography> 
@@ -34,7 +34,7 @@ function Header() {
             <Typography variant="h6" component="div" >Academy</Typography> 
           </Box>
          
-          <Button color="inherit" sx={{color:"rgb(0, 0, 0)",fontWeight:"700" }}>LOGIN</Button>
+          <Button color="inherit" sx={{color:"rgb(255, 255, 255)",fontWeight:"700" }}>LOGIN</Button>
         </Toolbar>
       </AppBar>
     </Box>
