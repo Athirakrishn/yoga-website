@@ -80,7 +80,7 @@ function LandingPage() {
 
 </section> 
 
-  <section className=' text-center ' style={{color:'rgb(4, 95, 102)',height:"100vh"}}>
+  <section className=' text-center' style={{color:'rgb(4, 95, 102)',height:"100vh"}}>
 <h1 style={{fontWeight:"700"}}>  Classes for every level and need </h1>
 <p className='text-dark'>Whether you’re a beginner or long-term practitioner, whether you just want to move your body or learn how it moves, you're welcome just as you are.</p>
 <div >
@@ -170,7 +170,6 @@ function LandingPage() {
 
   </Parallax>
 </section>
-
 
 
   <section className='row container-fluid ' >
